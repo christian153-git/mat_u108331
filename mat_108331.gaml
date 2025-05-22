@@ -190,7 +190,7 @@ global {
 		int zuletzt_gefundene_nahrung <- 0;
 		
 		// Reflex zum Update der Flugreichweite
-		reflex update_flugreihweite when: aktueller_zeitschritt < max_zeitschritte {
+		reflex update_flugreichweite when: aktueller_zeitschritt < max_zeitschritte {
 			
 			if (zuletzt_gefundene_nahrung > 4) {
 				
@@ -505,7 +505,7 @@ global {
 			// Es muss davon ausgegangen werden, dass auch Alternativnahrung (z.B. Spinnen, Insekten etc.) nicht immer verfügbar ist, aber fast immer
 			float generelle_nahrungsverfuegbarkeit <- rnd(0.8, 0.95);
 			
-			// Wenn die Meise keine EPS gefressen hat und bereot ost, Alternativnahrung zu fressen und diese verfügbar ist, dann frisst sie sie auch
+			// Wenn die Meise keine EPS gefressen hat und bereit ist, Alternativnahrung zu fressen und diese verfügbar ist, dann frisst sie sie auch
 			if (!gefressen and rnd(0.0, 1.0) < wirksamkeit_alternativnahrung and rnd(0.0, 1.0) < generelle_nahrungsverfuegbarkeit) {
 				
 				// Wie bereits erwähnt, 15 Fütterungen pro Zeitschritt
