@@ -65,7 +65,7 @@ global {
 	int gesamt_eps_neues_jahr <- 0;
 	
 	// Dateiname für Ergebnis CSV
-	string filename <- "ergebnisse_baeume_konzentriert.csv";
+	string filename <- "ergebnisse.csv";
 	
 	// Benötigter Boolean zur Drchführung der Reproduktion nach Simulationsende
 	bool eps_reproduktion_ausgefuehrt <- false;
@@ -678,7 +678,7 @@ global {
 			loop daten over: baumdaten {
 				
 				//Speichern der Daten in die ergebnisse.csv
-				save daten to: "ergebnisse_baeume_konzentriert.csv" format: "csv" rewrite: false;
+				save daten to: "ergebnisse.csv" format: "csv" rewrite: false;
 			}
 			
 			write "Daten wurden erfolgreich in 'ergebnisse.csv' gespeichert";
