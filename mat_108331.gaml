@@ -228,7 +228,7 @@ global {
 			}
 		} 
 		
-		// Reflex für Bewgungen und Jageb
+		// Reflex für Bewgungen und Jagen
 		reflex jagen when: aktueller_zeitschritt < max_zeitschritte {
 			
 			// Die Meise ist zwischen 06:00 und 20:00 aktive
